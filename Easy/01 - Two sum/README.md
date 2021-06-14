@@ -20,7 +20,7 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
 ## Contraints
-* 2 <= nums.length <= 104
-* -109 <= nums[i] <= 109
-* -109 <= target <= 109
+* 2 <= nums.length <= 10<sup>4</sup>
+* -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>
+* -10<sup>9</sup> <= target <= 10<sup>9</sup>
 * **Only one valid answer exists.**
