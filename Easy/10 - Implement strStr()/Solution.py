@@ -1,9 +1,11 @@
 class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
-        count = 0
-        for i in range(len(nums)):
-            if nums[i]!=val:
-                nums[count] = nums[i]
-                count +=1
-        return count
+    def strStr(self, haystack: str, needle: str) -> int:
+        if haystack == None or needle == None:
+            return 0
+        if haystack==needle:
+            return 0
+        for i in range(len(haystack)):
+            if (needle == haystack[i:i+len(needle)]):
+                return i
+        return -1
         
