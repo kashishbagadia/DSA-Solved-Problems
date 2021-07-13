@@ -1,19 +1,16 @@
-# Maximum Subarray
-Given an integer array ```nums```, find the contiguous subarray (containing at least one number) which has the largest sum and return its *sum*.
+# Length of Last Word
+Given a string ```s``` consists of some words separated by spaces, *return the length of the last word in the string. If the last word does not exist, return* ```0```.
+
+A **word** is a maximal substring consisting of non-space characters only.
 ## Examples
 ```
-Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
-Output: 6
-Explanation: [4,-1,2,1] has the largest sum = 6.
+Input: s = "Hello World"
+Output: 5
 ```
 ```
-Input: nums = [1]
-Output: 1
-```
-```
-Input: nums = [5,4,-1,7,8]
-Output: 23
+Input: s = " "
+Output: 0
 ```
 ## Contraints
-* ```1 <= nums.length <= 3 * 10<sup>4</sup>```
-* ```-10<sup>5</sup> <= nums[i] <= 10<sup>5</sup>```
+* ```1 <= s.length <= 10<sup>4</sup>```
+* ```s``` consists of only English letters and spaces ```' '```.
