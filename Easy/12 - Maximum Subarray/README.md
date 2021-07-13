@@ -1,30 +1,19 @@
-# Search Insert Position
-#### Implement strStr().
-
-Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+# Maximum Subarray
+Given an integer array ```nums```, find the contiguous subarray (containing at least one number) which has the largest sum and return its *sum*.
 ## Examples
 ```
-Input: nums = [1,3,5,6], target = 5
-Output: 2
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+Output: 6
+Explanation: [4,-1,2,1] has the largest sum = 6.
 ```
 ```
-Input: nums = [1,3,5,6], target = 2
+Input: nums = [1]
 Output: 1
 ```
 ```
-Input: nums = [1,3,5,6], target = 7
-Output: 4
-```
-```
-Input: nums = [1,3,5,6], target = 0
-Output: 0
-```
-```
-Input: nums = [1], target = 0
-Output: 0
+Input: nums = [5,4,-1,7,8]
+Output: 23
 ```
 ## Contraints
-* ```1 <= nums.length <= 10<sup>4</sup>```
-* ```-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>```
-* nums contains **distinct** values sorted in **ascending** order.
-* ```-10<sup>4</sup> <= target <= 10<sup>4</sup>```
+* ```1 <= nums.length <= 3 * 10<sup>4</sup>```
+* ```-10<sup>5</sup> <= nums[i] <= 10<sup>5</sup>```
