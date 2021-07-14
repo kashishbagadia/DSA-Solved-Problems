@@ -22,5 +22,5 @@ Input: haystack = "", needle = ""
 Output: 0
 ```
 ## Contraints
-* ```0 <= haystack.length, needle.length <= 5 * 10<sup>4</sup>```
+* 0 <= haystack.length, needle.length <= 5 * 10<sup>4</sup>
 * ```haystack``` and ```needle``` consist of only lower-case English characters.
