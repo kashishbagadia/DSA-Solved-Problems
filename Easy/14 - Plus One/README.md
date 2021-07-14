@@ -1,16 +1,24 @@
-# Length of Last Word
-Given a string ```s``` consists of some words separated by spaces, *return the length of the last word in the string. If the last word does not exist, return* ```0```.
+# Plus One
+Given a **non-empty** array of decimal digits representing a non-negative integer, increment one to the integer.
 
-A **word** is a maximal substring consisting of non-space characters only.
+The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit.
+
+You may assume the integer does not contain any leading zero, except the number 0 itself.
 ## Examples
 ```
-Input: s = "Hello World"
-Output: 5
+Input: digits = [1,2,3]
+Output: [1,2,4]
+Explanation: The array represents the integer 123.
 ```
 ```
-Input: s = " "
-Output: 0
+Input: digits = [4,3,2,1]
+Output: [4,3,2,2]
+Explanation: The array represents the integer 4321.
+```
+```
+Input: digits = [0]
+Output: [1]
 ```
 ## Contraints
-* ```1 <= s.length <= 10<sup>4</sup>```
-* ```s``` consists of only English letters and spaces ```' '```.
+* ```1 <= digits.length <= 100```
+* ```0 <= digits[i] <= 9```.
