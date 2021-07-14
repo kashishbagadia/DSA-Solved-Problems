@@ -24,7 +24,7 @@ Input: nums = [1], target = 0
 Output: 0
 ```
 ## Contraints
-* ```1 <= nums.length <= 10<sup>4</sup>```
-* ```-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>```
+* 1 <= nums.length <= 10<sup>4</sup>
+* -10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>
 * nums contains **distinct** values sorted in **ascending** order.
-* ```-10<sup>4</sup> <= target <= 10<sup>4</sup>```
+* -10<sup>4</sup> <= target <= 10<sup>4</sup>
