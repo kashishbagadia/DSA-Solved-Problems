@@ -1,6 +1,20 @@
 class Solution:
-    def plusOne(self, digits: List[int]) -> List[int]:
-        num = 0
-        for i in range(len(digits)):
-            num += digits[i] * pow(10, (len(digits)-1-i))
-        return (int(i) for i in str(num + 1))
+    def addBinary(self, a: str, b: str) -> str:
+        result = ""
+        carry = 0
+        countOfa = len(a)-1
+        countOfb = len(b)-1
+        while countOfa >= 0 or countOfb >= 0:
+            totalSum = carry
+            if countOfa >= 0:
+                totalSum += int(a[countOfa])
+                countOfa -= 1
+            if countOfb >= 0:
+                totalSum += int(b[countOfb])
+                countOfb -= 1
+            result = str(totalSum%2) + result
+            carry = totalSum // 2
+            
+        if carry > 0:
+            return str(1) + result
+        return result
