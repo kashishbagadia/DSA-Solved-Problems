@@ -12,5 +12,5 @@ Input: s = " "
 Output: 0
 ```
 ## Contraints
-* ```1 <= s.length <= 10<sup>4</sup>```
+* 1 <= s.length <= 10<sup>4</sup>
 * ```s``` consists of only English letters and spaces ```' '```.
