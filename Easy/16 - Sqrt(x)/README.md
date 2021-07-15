@@ -1,15 +1,18 @@
-# Add Binary
-Given two binary strings ```a``` and ```b```, return *their sum as a binary string*.
+# Sqrt(x)
+Given a non-negative integer ```x```, compute and return *the square root of* ```x```.
+
+Since the return type is an integer, the decimal digits are **truncated**, and only **the integer part** of the result is returned.
+
+**Note:** You are not allowed to use any built-in exponent function or operator, such as ```pow(x, 0.5)``` or ```x ** 0.5```.
 ## Examples
 ```
-Input: a = "11", b = "1"
-Output: "100"
+Input: x = 4
+Output: 2
 ```
 ```
-Input: a = "1010", b = "1011"
-Output: "10101"
+Input: x = 8
+Output: 2
+Explanation: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned.
 ```
 ## Contraints
-* 1 <= a.length, b.length <= 10<sup>4</sup>
-* ```a``` and ```b``` consist only of ```'0'``` or ```'1'``` characters.
-* Each string does not contain leading zeros except for the zero itself.
+* 0 <= x <= 2<sup>31</sup> - 1
