@@ -1,18 +1,22 @@
-# Sqrt(x)
-Given a non-negative integer ```x```, compute and return *the square root of* ```x```.
+# Climbing Stairs
+You are climbing a staircase. It takes ```n``` steps to reach the top.
 
-Since the return type is an integer, the decimal digits are **truncated**, and only **the integer part** of the result is returned.
-
-**Note:** You are not allowed to use any built-in exponent function or operator, such as ```pow(x, 0.5)``` or ```x ** 0.5```.
+Each time you can either climb ```1``` or ```2``` steps. In how many distinct ways can you climb to the top?
 ## Examples
 ```
-Input: x = 4
+Input: n = 2
 Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
 ```
 ```
-Input: x = 8
-Output: 2
-Explanation: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned.
+Input: n = 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
 ```
 ## Contraints
-* 0 <= x <= 2<sup>31</sup> - 1
+* ```1 <= n <= 45```
