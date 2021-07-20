@@ -1,24 +1,17 @@
 # Same Tree
-#### Given the roots of two binary trees ```p``` and ```q```, write a function to check if they are the same or not.
-
-Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+#### Given the ```root``` of a binary tree, *check whether it is a mirror of itself* (i.e., symmetric around its center).
 
 ## Examples
-![ex1](https://user-images.githubusercontent.com/66882470/126307660-58caa64f-c887-406f-8fa7-cf08b206ec0f.jpg)
+![symtree1](https://user-images.githubusercontent.com/66882470/126311860-cc7a494c-8dbd-4bae-a3cb-3c0e9e85dba0.jpg)
 ```
-Input: p = [1,2,3], q = [1,2,3]
+Input: root = [1,2,2,3,4,4,3]
 Output: true
 ```
-![ex2](https://user-images.githubusercontent.com/66882470/126307720-7f33d72b-7664-4f0b-b7ab-55d6f100cdb3.jpg)
+![symtree2](https://user-images.githubusercontent.com/66882470/126312069-f374b792-6fed-492a-9676-4bc4f9a10ea7.jpg)
 ```
-Input: p = [1,2], q = [1,null,2]
-Output: false
-```
-![ex3](https://user-images.githubusercontent.com/66882470/126307804-fa0fd183-0596-4562-9f31-e3cd24a9276f.jpg)
-```
-Input: p = [1,2,1], q = [1,1,2]
+Input: root = [1,2,2,null,3,null,3]
 Output: false
 ```
 ## Contraints
-* The number of nodes in both trees is in the range ```[0, 100]```.
-* -10<sup>4</sup> <= Node.val <= 10<sup>4</sup>
+* The number of nodes in the tree is in the range ```[1, 1000]```.
+* ```-100 <= Node.val <= 100```
