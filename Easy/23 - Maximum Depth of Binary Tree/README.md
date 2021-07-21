@@ -1,17 +1,26 @@
-# Same Tree
-#### Given the ```root``` of a binary tree, *check whether it is a mirror of itself* (i.e., symmetric around its center).
+# Maximum Depth of Binary Tree
+#### Given the ```root``` of a binary tree, return *its maximum depth*.
+
+A binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
 ## Examples
-![symtree1](https://user-images.githubusercontent.com/66882470/126311860-cc7a494c-8dbd-4bae-a3cb-3c0e9e85dba0.jpg)
+![tmp-tree](https://user-images.githubusercontent.com/66882470/126449495-fa17f031-7fd2-49f3-a976-5c8c7bceb0b4.jpg)
 ```
-Input: root = [1,2,2,3,4,4,3]
-Output: true
+Input: root = [3,9,20,null,null,15,7]
+Output: 3
 ```
-![symtree2](https://user-images.githubusercontent.com/66882470/126312069-f374b792-6fed-492a-9676-4bc4f9a10ea7.jpg)
 ```
-Input: root = [1,2,2,null,3,null,3]
-Output: false
+Input: root = [1,null,2]
+Output: 2
+```
+```
+Input: root = []
+Output: 0
+```
+```
+Input: root = [0]
+Output: 1
 ```
 ## Contraints
-* The number of nodes in the tree is in the range ```[1, 1000]```.
+* The number of nodes in the tree is in the range [0, 10<sup>4</sup>].
 * ```-100 <= Node.val <= 100```
