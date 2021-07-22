@@ -1,25 +1,20 @@
-# Balanced Binary Tree
-#### Given a binary tree, determine if it is height-balanced.
+# Minimum Depth of Binary Tree
+#### Given a binary tree, find its minimum depth.
 
-For this problem, a height-balanced binary tree is defined as:
+The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
-a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+**Note**: A leaf is a node with no children.
 
 ## Examples
-![balance_1](https://user-images.githubusercontent.com/66882470/126668617-831af813-3477-4062-9379-e7af713da44a.jpg)
+![ex_depth](https://user-images.githubusercontent.com/66882470/126671171-1bd7b132-56b9-4993-8e84-e7aa2697258e.jpg)
 ```
 Input: root = [3,9,20,null,null,15,7]
-Output: true
-```
-![balance_2](https://user-images.githubusercontent.com/66882470/126668668-7dd86e1b-4e26-4be1-9fd7-249aeb230b52.jpg)
-```
-Input: root = [1,2,2,3,3,null,null,4,4]
-Output: false
+Output: 2
 ```
 ```
-Input: root = []
-Output: true
+Input: root = [2,null,3,null,4,null,5,null,6]
+Output: 5
 ```
 ## Contraints
-* The number of nodes in the tree is in the range ```[0, 5000]```.
-* -10<sup>4</sup> <= Node.val <= 10<sup>4</sup>
+* The number of nodes in the tree is in the range [0, 10<sup>5</sup>].
+* ```-1000 <= Node.val <= 1000```
