@@ -1,20 +1,17 @@
-# Minimum Depth of Binary Tree
-#### Given a binary tree, find its minimum depth.
+# Pascal's Triangle
+#### Given an integer ```numRows```, return the first numRows of **Pascal's triangle**.
 
-The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+In **Pascal's triangle**, each number is the sum of the two numbers directly above it as shown:
 
-**Note**: A leaf is a node with no children.
-
+![PascalTriangleAnimated2](https://user-images.githubusercontent.com/66882470/126896302-44d3d007-1e70-4286-8d39-28d7a9d4745c.gif)
 ## Examples
-![ex_depth](https://user-images.githubusercontent.com/66882470/126671171-1bd7b132-56b9-4993-8e84-e7aa2697258e.jpg)
 ```
-Input: root = [3,9,20,null,null,15,7]
-Output: 2
+Input: numRows = 5
+Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 ```
 ```
-Input: root = [2,null,3,null,4,null,5,null,6]
-Output: 5
+Input: numRows = 1
+Output: [[1]]
 ```
 ## Contraints
-* The number of nodes in the tree is in the range [0, 10<sup>5</sup>].
-* ```-1000 <= Node.val <= 1000```
+* 1 <= numRows <= 30
