@@ -1,21 +1,21 @@
-# Pascal's Triangle II
-#### Given an integer ```rowIndex```, return the rowIndexth **(0-indexed)** row of the **Pascal's triangle**.
+# Best Time to Buy and Sell Stock
+#### You are given an array ```prices``` where ```prices[i]``` is the price of a given stock on the ```ith``` day.
 
-In **Pascal's triangle**, each number is the sum of the two numbers directly above it as shown:
+You want to maximize your profit by choosing a **single day** to buy one stock and choosing a **different day in the future** to sell that stock.
 
-![PascalTriangleAnimated2](https://user-images.githubusercontent.com/66882470/126896302-44d3d007-1e70-4286-8d39-28d7a9d4745c.gif)
+Return *the maximum profit you can achieve from this transaction.* If you cannot achieve any profit, return ```0```.
 ## Examples
 ```
-Input: rowIndex = 3
-Output: [1,3,3,1]
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
 ```
 ```
-Input: rowIndex = 0
-Output: [1]
-```
-```
-Input: rowIndex = 1
-Output: [1,1]
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transactions are done and the max profit = 0.
 ```
 ## Contraints
-* 0 <= rowIndex <= 33
+* 1 <= prices.length <= 10<sup>5</sup>
+* 0 <= prices[i] <= 10<sup>4</sup>
