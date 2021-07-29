@@ -1,7 +1,16 @@
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        profit = 0
-        for i in range(1, len(prices)):
-            if prices[i] > prices[i-1]:
-                profit += (prices[i] - prices[i-1])
-        return profit
+    def isPalindrome(self, s: str) -> bool:
+        i = 0
+        j = len(s) - 1
+        left, right = "", ""
+        s = s.lower()
+        
+        for i in range(0, len(s)):
+            if s[i].isalnum():
+                left += s[i]
+                
+        for j in range(len(s) -1, -1, -1):
+            if s[j].isalnum():
+                right += s[j]
+                
+        return left == right
