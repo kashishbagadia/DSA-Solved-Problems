@@ -28,5 +28,5 @@ Explanation: There is no cycle in the linked list.
 ````
 ## Contraints
 * The number of the nodes in the list is in the range [0, 10<sup>4</sup>].
--10<sup>5</sup> <= Node.val <= 10<sup>5</sup>
-pos is -1 or a **valid index** in the linked-list.
+* -10<sup>5</sup> <= Node.val <= 10<sup>5</sup>
+* pos is -1 or a **valid index** in the linked-list.
