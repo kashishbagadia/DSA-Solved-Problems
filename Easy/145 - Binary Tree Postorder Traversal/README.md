@@ -1,12 +1,12 @@
-# Binary Tree Preorder Traversal
+# Binary Tree Postorder Traversal
 
 #### Given the `root` of a binary tree, return *the preorder traversal of its nodes' values.*
 
 ## Examples
-![inorder_1](https://user-images.githubusercontent.com/66882470/128389510-6b4b9c70-8b8a-4c95-9838-af004cb92bc6.jpg)
+![pre1](https://user-images.githubusercontent.com/66882470/130821172-805b04cf-9e43-4d3c-8b72-548f44076ad6.jpg)
 ```
 Input: root = [1,null,2,3]
-Output: [1,2,3]
+Output: [3,2,1]
 ```
 ```
 Input: root = []
