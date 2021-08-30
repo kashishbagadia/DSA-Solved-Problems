@@ -1,32 +1,25 @@
-# Binary Tree Postorder Traversal
+# Add Two Numbers
 
-#### Given the `root` of a binary tree, return *the preorder traversal of its nodes' values.*
+#### You are given two **non-empty** linked lists representing two non-negative integers. The digits are stored in **reverse order**, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 
+You may assume the two numbers do not contain any leading zero, except the number 0 itself
 ## Examples
-![pre1](https://user-images.githubusercontent.com/66882470/130821172-805b04cf-9e43-4d3c-8b72-548f44076ad6.jpg)
-```
-Input: root = [1,null,2,3]
-Output: [3,2,1]
-```
-```
-Input: root = []
-Output: []
-```
-````
-Input: root = [1]
-Output: [1]
-````
+![addtwonumber1](https://user-images.githubusercontent.com/66882470/131347864-604bb48d-627b-4fa5-b786-c4eb28be7b41.jpg)
 
-![inorder_5](https://user-images.githubusercontent.com/66882470/128389740-7969e842-acba-4576-8245-0a342c17ee44.jpg)
 ```
-Input: root = [1,2]
-Output: [1,2]
+Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807.
 ```
-![inorder_4](https://user-images.githubusercontent.com/66882470/128389685-dffdf5f6-a906-4024-9886-9500aeec9e0b.jpg)
 ```
-Input: root = [1,null,2]
-Output: [1,2]
+Input: l1 = [0], l2 = [0]
+Output: [0]
 ```
+````
+Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+Output: [8,9,9,9,0,0,0,1]
+````
 ## Contraints
-* The number of nodes in the tree is in the range [0, 100].
-* -100 <= Node.val <= 100
+* The number of nodes in each linked list is in the range `[1, 100]`.
+* 0 <= Node.val <= 9
+* It is guaranteed that the list represents a number that does not have leading zeros.
