@@ -1,13 +1,16 @@
 class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        charSet = set() # for storing unique characters only
-        l = 0
-        res = 0
-        
-        for r in range(len(s)):
-            while s[r] in charSet:
-                charSet.remove(s[l])
-                l+=1
-            charSet.add(s[r])
-            res = max(res, r-l+1)
-        return res
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        m = len(nums1)
+        n = len(nums2)
+        j=0
+        for i in range(m, m+n):
+            nums1.append(nums2[j])
+            j = j + 1
+
+        nums1 = sorted(nums1)
+        m1 = len(nums1)
+
+        if m1%2 == 0:
+            return (nums1[(m1//2)-1] + nums1[(m1//2)])/2
+        else:
+            return nums1[((m1+1)//2)-1]
