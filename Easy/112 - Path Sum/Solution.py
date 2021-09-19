@@ -14,4 +14,3 @@ class Solution:
             return targetSum == 0
         else:
             return self.hasPathSum(root.left, targetSum) or self.hasPathSum(root.right, targetSum)
->>>>>>> 2b13e3bb23edfc25fa373aa09019e309ab6a6b3c
