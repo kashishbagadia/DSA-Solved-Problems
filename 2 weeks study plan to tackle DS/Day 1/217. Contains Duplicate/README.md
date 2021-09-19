@@ -1,32 +1,21 @@
-# Binary Tree Preorder Traversal
+# Contains Duplicate
 
-#### Given the `root` of a binary tree, return *the preorder traversal of its nodes' values.*
+#### Given an integer array `nums`, return `true` if any value appears **at least twice** in the array, and return `false` if every element is distinct.
 
 ## Examples
-![inorder_1](https://user-images.githubusercontent.com/66882470/128389510-6b4b9c70-8b8a-4c95-9838-af004cb92bc6.jpg)
 ```
-Input: root = [1,null,2,3]
-Output: [1,2,3]
+Input: nums = [1,2,3,1]
+Output: true
 ```
 ```
-Input: root = []
-Output: []
+Input: nums = [1,2,3,4]
+Output: false
 ```
 ````
-Input: root = [1]
-Output: [1]
+Input: nums = [1,1,1,3,3,4,3,2,4,2]
+Output: true
 ````
 
-![inorder_5](https://user-images.githubusercontent.com/66882470/128389740-7969e842-acba-4576-8245-0a342c17ee44.jpg)
-```
-Input: root = [1,2]
-Output: [1,2]
-```
-![inorder_4](https://user-images.githubusercontent.com/66882470/128389685-dffdf5f6-a906-4024-9886-9500aeec9e0b.jpg)
-```
-Input: root = [1,null,2]
-Output: [1,2]
-```
 ## Contraints
-* The number of nodes in the tree is in the range [0, 100].
-* -100 <= Node.val <= 100
+* 1 <= nums.length <= 10<sup>5</sup>
+* -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>
