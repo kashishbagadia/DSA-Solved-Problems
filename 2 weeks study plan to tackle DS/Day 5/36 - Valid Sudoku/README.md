@@ -1,17 +1,45 @@
-# Pascal's Triangle
-#### Given an integer ```numRows```, return the first numRows of **Pascal's triangle**.
+# Valid Sudoku
+Determine if a `9 x 9` Sudoku board is valid. Only the filled cells need to be validated **according to the following rules:**
 
-In **Pascal's triangle**, each number is the sum of the two numbers directly above it as shown:
+   1. Each row must contain the digits 1-9 without repetition.
+   2. Each column must contain the digits 1-9 without repetition.
+   3. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition.
 
-![PascalTriangleAnimated2](https://user-images.githubusercontent.com/66882470/126896302-44d3d007-1e70-4286-8d39-28d7a9d4745c.gif)
+Note:
+
+* A Sudoku board (partially filled) could be valid but is not necessarily solvable.
+* Only the filled cells need to be validated according to the mentioned rules.
 ## Examples
+![250px-Sudoku-by-L2G-20050714 svg](https://user-images.githubusercontent.com/66882470/134497764-39afb04c-e8af-4398-876e-4e982f111e93.png)
+
 ```
-Input: numRows = 5
-Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+Input: board = 
+[["5","3",".",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","8",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]]
+Output: true
 ```
 ```
-Input: numRows = 1
-Output: [[1]]
+Input: board = 
+[["8","3",".",".","7",".",".",".","."]
+,["6",".",".","1","9","5",".",".","."]
+,[".","9","8",".",".",".",".","6","."]
+,["8",".",".",".","6",".",".",".","3"]
+,["4",".",".","8",".","3",".",".","1"]
+,["7",".",".",".","2",".",".",".","6"]
+,[".","6",".",".",".",".","2","8","."]
+,[".",".",".","4","1","9",".",".","5"]
+,[".",".",".",".","8",".",".","7","9"]]
+Output: false
+Explanation: Same as Example 1, except with the 5 in the top left corner being modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid
 ```
 ## Contraints
-* 1 <= numRows <= 30
+* board.length == 9
+* board[i].length == 9
+* board[i][j] is a digit 1-9 or '.'.
