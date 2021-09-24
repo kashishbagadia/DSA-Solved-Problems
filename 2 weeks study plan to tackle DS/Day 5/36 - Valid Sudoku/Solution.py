@@ -1,22 +1,16 @@
 class Solution:
-    def generate(self, numRows: int) -> List[List[int]]:
-        ans = []
-        first_line = [1]
-        second_line = [1, 1]
-        if numRows == 0:
-            return ans
-        ans.append(first_line)
-        if numRows == 1:
-            return ans
-        ans.append(second_line)
-        if numRows == 2:
-            return ans
-        for i in range(2, numRows):
-            current_line = list(range(i + 1))
-            current_line[0] = 1
-            current_line[i] = 1
-            for j in range(1, i):
-                current_line[j] = ans[i-1][j-1] + ans[i-1][j]
-            ans.append(current_line)
-        return ans
-            
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        cols = collections.defaultdict(set)
+        rows = collections.defaultdict(set)
+        square = collections.defaultdict(set)
+        
+        for i in range(9):
+            for j in range(9):
+                if board[i][j] == ".":
+                    continue
+                if board[i][j] in rows[i] or board[i][j] in cols[j] or board[i][j] in square[i//3, j//3]:
+                    return False
+                cols[j].add(board[i][j])
+                rows[i].add(board[i][j])
+                square[(i//3,j//3)].add(board[i][j])
+        return True
