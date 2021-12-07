@@ -1,13 +1,12 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 class Solution:
-    def minCostToMoveChips(self, position: List[int]) -> int:
-        even = 0
-        odd = 0
-        for i in position:
-            if i % 2 == 0:
-                even +=1
-            else:
-                odd += 1
-        if even == len(position) or odd == len(position):
-            return 0
-        else:
-            return min(even, odd)
+    def getDecimalValue(self, head: ListNode) -> int:
+        num = head.val
+        while head.next:
+            num = (num << 1) | head.next.val
+            head = head.next
+        return num
