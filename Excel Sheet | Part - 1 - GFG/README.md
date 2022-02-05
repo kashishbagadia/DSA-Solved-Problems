@@ -1,4 +1,4 @@
-# Excel Sheet | Part - 1
+# Excel Sheet Part - 1
 ## Medium 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given a positive integer N, return&nbsp;its corresponding column title as it would appear in an Excel sheet.<br>
