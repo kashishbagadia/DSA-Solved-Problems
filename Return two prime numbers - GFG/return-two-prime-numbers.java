@@ -26,7 +26,7 @@ class GFG{
 class Solution{
     static List<Integer> primeDivision(int N){
         List<Integer> res = new ArrayList<Integer>();
-        for(int i = N-1; i >= 1; i--){
+        for(int i = N-1; i >= N/2; i--){
             if(isPrime(i) && isPrime(N-i)){
                 res.add(N-i);
                 res.add(i);
