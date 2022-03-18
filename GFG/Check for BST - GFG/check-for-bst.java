@@ -117,12 +117,11 @@ public class Solution
     //Function to check whether a Binary Tree is BST or not.
     boolean isBST(Node root)
     {
-        return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
+        return isBSTUtil(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
-    
-    public boolean isValidBST(Node root, long minVal, long maxVal){
-        if(root==null) return true;
-        if(root.data >= maxVal || root.data <= minVal) return false;
-        return isValidBST(root.left, minVal, root.data) && isValidBST(root.right, root.data, maxVal);
+    boolean isBSTUtil(Node node, int min, int max){
+        if(node==null) return true;
+        if(node.data < min || node.data> max) return false;
+        return isBSTUtil(node.left, min, node.data-1) && isBSTUtil(node.right, node.data+1, max);
     }
 }
