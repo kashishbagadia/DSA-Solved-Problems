@@ -1,4 +1,4 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 import java.util.LinkedList; 
 import java.util.Queue; 
 import java.io.*;
@@ -102,6 +102,7 @@ class GfG {
 	        }
 	}
 }
+
 // } Driver Code Ends
 
 
@@ -125,10 +126,13 @@ class Solution
 	{
 		if(root == null) return null;
 		if(root.data == n1 || root.data == n2) return root;
+		
 		Node left = lca(root.left, n1, n2);
 		Node right = lca(root.right, n1, n2);
+		
 		if(left == null) return right;
 		if(right == null) return left;
+		
 		return root;
 	}
 }
